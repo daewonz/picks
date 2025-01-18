@@ -4,8 +4,24 @@
 
 <mapper namespace="com.shop.picks.main.MainMapper">
 
-    <select id="getMembers" resultType="List">
+    <select id="getMembers" resultType="Map">
 		SELECT *
 		FROM picks_member
     </select>
+    
+    <insert id="insertMember">
+    INSERT INTO picks_member 
+    (
+		id
+    	,password
+    	,name
+    	,nickname)
+    VALUES
+    (
+		"test"
+		,"1234"
+		,"테스트"
+		,"테스트"
+	)
+    </insert>
 </mapper>

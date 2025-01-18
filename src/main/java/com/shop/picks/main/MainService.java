@@ -11,8 +11,13 @@ public class MainService {
 	@Autowired
 	MainMapper mainMapper;
 	
-	public List<Map<String, Object>> getMembers() {
+	public Boolean insertMember() {
 		System.out.println("1431412");
+		// TODO Auto-generated method stub
+		return mainMapper.insertMember();
+	}
+
+	public List<Map<String, Object>> getMembers() {
 		// TODO Auto-generated method stub
 		return mainMapper.getMembers();
 	}

@@ -10,6 +10,8 @@ public interface MainMapper {
 	
 	List<Map<String, Object>> getMembers();
 
+	Boolean insertMember();
+
 
 	}
 

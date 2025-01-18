@@ -21,9 +21,9 @@ public class MainController {
 	public ResponseEntity<String> test() {
 		System.out.println("안녕하세요 테스트입니다.");
 		URI location = URI.create("http://example.com/languages/java/");
-		List<Map<String, Object>> members = new ArrayList<>();
+		List<Map<String, Object>> members = null;
 		members = mainService.getMembers();
-		//System.out.println(members);
+		System.out.println(members);
 		return ResponseEntity.created(location).header("MyResponseHeader", "MyValue").body("Hello World123");
 	}
 }
